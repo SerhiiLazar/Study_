@@ -1,5 +1,5 @@
 // USER VARIABLES SECTION
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
 $accent: orange; // Accent Color
 $fontsize: 16px; // Body Font Size
 $textcolor: #333; // Text Color
@@ -8,56 +8,77 @@ $userfont: Roboto, sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 30px;
+$grid-gutter-width: 20px;
 $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
 
-@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss"; // Bootstrap Reboot collection
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss"; // Bootstrap Breakpoints mixin
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
 
 @mixin font($fname, $fstyle, $fweight, $furl) {
-	@font-face {
-		font-family: $fname;
-		font-style: $fstyle;
-		font-weight: $fweight;
-		src: local($fname), url($furl) format('woff2');
-		// font-display: swap; // Uncomment to initially display system fonts
-	}
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: local($fname), url($furl) format("woff2");
+    // font-display: swap; // Uncomment to initially display system fonts
+  }
 }
-
-@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2');
-@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2');
-@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2');
-@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
-
+/* 
+@include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
+@include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
+@include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+@include font(
+  "Roboto",
+  italic,
+  700,
+  "../fonts/roboto-bolditalic-webfont.woff2"
+);
+ */
 // GENERAL DOCUMENT STYLES
 
 ::placeholder {
-	color: #666;
+  color: #666;
 }
 
 ::selection {
-	background-color: $accent;
-	color: #fff;
+  background-color: $accent;
+  color: #fff;
 }
 
-input, textarea {
-	outline: none;
-	&:focus:required:invalid { border-color: red }
-	&:required:valid { border-color: green }
+input,
+textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
 }
 
 body {
-	font-family: $userfont;
-	font-size: $fontsize;
-	line-height: $lineheight;
-	color: $textcolor;
-	min-width: 320px;
-	position: relative;
-	overflow-x: hidden;
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $textcolor;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul {
+  margin-bottom: 0;
 }

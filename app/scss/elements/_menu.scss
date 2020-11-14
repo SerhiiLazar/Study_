@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  max-width: 100%;
+  ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    li {
+      display: block;
+      position: relative;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+      border-radius: 6px;
+    }
+    a {
+      padding: 4px 12px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      line-height: 20px;
+      color: #868686;
+      transition: all 0.3s;
+      &:hover {
+        background: #ffbb42;
+        color: #ffff;
+        border-radius: 6px;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
