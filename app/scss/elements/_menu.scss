@@ -22,11 +22,11 @@
       font-size: 16px;
       text-transform: uppercase;
       line-height: 20px;
-      color: #868686;
+      color: $gray;
       transition: all 0.3s;
       &:hover {
-        background: #ffbb42;
-        color: #ffff;
+        background: $yl;
+        color: $wh;
         border-radius: 6px;
         transition: all 0.3s;
       }
