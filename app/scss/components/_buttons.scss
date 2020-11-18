@@ -1,0 +1,35 @@
+.btn {
+  padding: 4px 12px;
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: $gray;
+  transition: all 0.3s;
+  &:hover {
+    background: $yl;
+    color: $wh;
+    border-radius: 6px;
+    transition: all 0.3s;
+  }
+}
+.btn--yl {
+  padding: 4px 12px;
+  display: block;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  background-color: $yl;
+  transition: all 0.3s;
+  &:hover {
+    background: $wh;
+    color: $gray;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+}
