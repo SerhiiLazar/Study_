@@ -1,5 +1,17 @@
 .boostup-slider {
   &__wrap {
-    background-image: url("/images/dest/slider/laptop_img.png");
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px;
+  }
+  &__block-content {
+    &::after {
+      content: "";
+
+      z-index: 5;
+      background-image: url(../images/dest/slider/slider_img.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }

@@ -1,0 +1,80 @@
+.boostup__form {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 10px;
+  .form-control {
+    position: relative;
+    padding-left: 32px;
+    height: 46px;
+    border-radius: 2px;
+    background-color: $wh;
+    border: none;
+    transition: all 0.3s;
+  }
+  .form-name {
+    position: relative;
+    padding: 0px 10px;
+    .btn-name {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      &:before {
+        content: "";
+        background-image: url(../images/dest/icon/name_img.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        height: 15px;
+        top: -6px;
+        left: 4px;
+        width: 15px;
+      }
+    }
+  }
+  .form-email {
+    position: relative;
+    padding: 0px 10px;
+    .btn-email {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      &:before {
+        content: "";
+        background-image: url(../images/dest/icon/email_img.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        height: 15px;
+        top: -6px;
+        left: 4px;
+        width: 15px;
+      }
+    }
+  }
+  .form-phone {
+    position: relative;
+    padding: 0px 10px;
+    .btn-phone {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      &:before {
+        content: "";
+        background-image: url(../images/dest/icon/phone_img.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        height: 15px;
+        top: -6px;
+        left: 4px;
+        width: 15px;
+      }
+    }
+  }
+}
