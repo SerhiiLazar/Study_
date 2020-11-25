@@ -1,19 +1,20 @@
 .boostup {
   padding-bottom: 50px;
   padding-top: 94px;
-  height: 589px;
+  height: 664px;
   background-color: $blue;
 
   &__content {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 110px 0 20px;
     /*   align-items: center; */
   }
   &__title {
     display: flex;
     flex-direction: column;
-    padding: 110px 0 20px;
+
     text-align: center;
 
     .subtitle {

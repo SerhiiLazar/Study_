@@ -1,0 +1,36 @@
+.about {
+  background-color: $yl;
+  &__content {
+    display: flex;
+  }
+  &__left {
+    margin-left: -270px;
+    width: 850px;
+    height: 623px;
+  }
+  &__right {
+    display: flex;
+    background-color: $yl;
+    flex-direction: column;
+    padding: 163px 0 175px 75px;
+    a {
+      width: 145px;
+      height: 46px;
+      text-align: center;
+      color: $wh;
+    }
+    .title {
+      padding-bottom: 20px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.025em;
+      color: $wh;
+    }
+    .text {
+      font-size: 13px;
+      font-weight: 400;
+      color: $wh;
+      padding-bottom: 20px;
+    }
+  }
+}
