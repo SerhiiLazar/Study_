@@ -1,17 +1,19 @@
-.boostup-slider {
-  &__wrap {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 20px;
+.slider {
+  /* display: flex; */
+  position: relative;
+  width: 647px;
+  margin: 22px auto;
+  overflow: hidden;
+  padding-bottom: 20px;
+  .line {
+    position: relative;
+    height: 343px;
+    overflow: hidden;
+    left: 0;
+    transition: all ease 1s;
   }
-  &__block-content {
-    &::after {
-      content: "";
-
-      z-index: 5;
-      background-image: url(../images/dest/slider/slider_img.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  .slide {
+    height: 343px;
+    float: left;
   }
 }
