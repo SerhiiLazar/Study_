@@ -8,6 +8,10 @@
     <link rel="icon" href="images/favicon.png" />
     <meta property="og:image" content="images/dest/preview.jpg" />
     <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.scss" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.scss" />
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
   </head>
 
   <body>
@@ -76,16 +80,30 @@
             </div>
           </form>
         </div>
-        <div class="slider">
-          <div class="line">
-            <div class="slide">
-              <img src="../images/dest/slider/laptop_img.png" alt="" />
+        <div class="slider__content">
+          <div class="slider">
+            <div class="line">
+              <div class="slide">
+                <img src="../images/dest/slider/laptop_img.png" alt="" />
+              </div>
             </div>
-            <div class="slide">
-              <img src="../images/dest/slider/laptop_img.png" alt="" />
+          </div>
+        </div>
+        <div class="slider__content">
+          <div class="slider">
+            <div class="line">
+              <div class="slide">
+                <img src="../images/dest/slider/laptop_img.png" alt="" />
+              </div>
             </div>
-            <div class="slide">
-              <img src="../images/dest/slider/laptop_img.png" alt="" />
+          </div>
+        </div>
+        <div class="slider__content">
+          <div class="slider">
+            <div class="line">
+              <div class="slide">
+                <img src="../images/dest/slider/laptop_img.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -214,47 +232,61 @@
     </div>
     <div class="price" id="price">
       <div class="container">
-        <div class="price_content">
-          <h2>
-            <span>Choos your price</span>Lorem Ipsum is simply dummy text of the
-            printing typesetting .
-          </h2>
-          <div class="box-price">
-            <div class="box-price-item">
+        <div class="price__content">
+          <div class="subtitle-top">
+            <h2>
+              <span>Choos your price</span>
+              <p>Ipsum is simply dummy text of the printing typesetting .</p>
+            </h2>
+          </div>
+
+          <div class="price__box">
+            <div class="price__box-item">
               <h3>Basic plan</h3>
-              <h3><span>$</span>22<span>per month</span></h3>
+              <h4>
+                <span><sup>$</sup>22</span>
+                <p>per month</p>
+              </h4>
               <ul>
                 <li>1 Account</li>
                 <li>8 hour support</li>
                 <li>Custom Cloud Services</li>
-                <li><a href="#" class="btn--yl">Get Started</a></li>
               </ul>
+              <a href="#" class="btn--price">Get Started</a>
             </div>
-            <div class="box-price-item active">
+            <div class="price__box-item--blue">
               <h3>Premium plan</h3>
-              <h3><span>$</span>42<span>per month</span></h3>
+              <h4>
+                <span><sup>$</sup>42</span>
+                <p>per month</p>
+              </h4>
               <ul>
                 <li>2 Account</li>
                 <li>100MB Storage</li>
                 <li>Custom Cloud Services</li>
-                <li><a href="#" class="btn--yl">Get Started</a></li>
               </ul>
+              <a href="#" class="btn--price">Get Started</a>
             </div>
-            <div class="box-price-item">
+            <div class="price__box-item">
               <h3>Gold plan</h3>
-              <h3><span>$</span>62<span>per month</span></h3>
+              <h4>
+                <span><sup>$</sup>62</span>
+                <p>per month</p>
+              </h4>
               <ul>
                 <li>8Account</li>
                 <li>24 hour support</li>
                 <li>Custom Cloud Services</li>
-                <li><a href="#" class="btn--yl">Get Started</a></li>
               </ul>
+              <a href="#" class="btn--price">Get Started</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
     <script src="js/app.min.js"></script>
+    <script src="js/min.js"></script>
   </body>
 </html>

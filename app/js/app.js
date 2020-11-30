@@ -3,16 +3,29 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Custom JS
 
 })
-let line = document.querySelector('.line');
-let slides = document.querySelectorAll('.slide');
-let sliderWidth = document.querySelector('.slider') .offsetWidth;
-let widthArray = [0];
-let lineWidth = 0;
-let offset = 0;
-let step = 0;
-let rest = 0;
 
-for (let i = 0; i < slides.length; i++) {
+$(function() {
+
+    $('.slider__content').slick({
+        rtl: true,
+        dots: true,
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        loop:true
+    })
+})
+
+/* var line = document.querySelector('.line');
+var slides = document.querySelectorAll('.slide');
+var sliderWidth = document.querySelector('.slider') .offsetWidth;
+var widthArray = [0];
+var lineWidth = 0;
+var offset = 0;
+var step = 0;
+var rest =  0;
+
+for (var i = 0; i < slides.length; i++) {
     widthArray.push(slides[i].offsetWidth);
     lineWidth += slides[i].offsetWidth;
 }
@@ -27,7 +40,7 @@ document.onclick = function () {
         step++;
     }
     else {
-        line.style.left = -(lineWidth - sliderWidth) + 'px';
+        line.style.left = -(lineWidth - sliderWidth)+'px';
         offset = 0;
         step = -1;
     }
@@ -39,3 +52,4 @@ document.onclick = function () {
         step++;
     }
 }
+ */
