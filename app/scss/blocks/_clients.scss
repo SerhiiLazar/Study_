@@ -1,0 +1,31 @@
+.clients {
+  background-color: $yl;
+  padding-top: 100px;
+  &__title {
+    text-align: center;
+    h2 {
+      line-height: 22px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: none;
+      letter-spacing: normal;
+      color: #ffffff;
+    }
+  }
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__ item-1 {
+    width: 568px;
+    padding: 20px 10px 20px 10px;
+  }
+}

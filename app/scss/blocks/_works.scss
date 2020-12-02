@@ -1,0 +1,134 @@
+.works {
+  padding-top: 152px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 150px;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: cetner;
+  }
+  &__title {
+    text-align: center;
+    h2 {
+      line-height: 22px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.025em;
+      color: #394b50;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: none;
+      letter-spacing: normal;
+      color: #7b7b7b;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+  &__left {
+    display: flex;
+    position: relative;
+    &:after {
+      content: "";
+      background-image: url(../images/dest/step1-2.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 54px;
+      left: 227px;
+      padding: 20px 70px 20px;
+    }
+    .step-1-img {
+      align-items: center;
+
+      padding: 103px 0 103px;
+    }
+    .step-2-img {
+      position: relative;
+      padding: 103px 0 98px;
+    }
+    &::before {
+      content: "";
+      background-image: url(../images/dest/step2-img.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 209px;
+      left: 511px;
+      padding: 12px 6px 0px;
+    }
+  }
+  &__right {
+    display: flex;
+    position: relative;
+    &:after {
+      content: "";
+      background-image: url(../images/dest/step1-2.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 54px;
+      left: 227px;
+      padding: 20px 70px 20px;
+    }
+    .step-3-img {
+      align-items: center;
+
+      padding: 103px 0 103px;
+    }
+
+    .step-4-img {
+      padding: 103px 0 97px;
+    }
+    &::before {
+      content: "";
+      background-image: url(../images/dest/step3-img.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 209px;
+      left: 35px;
+      padding: 12px 6px 0px;
+    }
+  }
+  span {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #394b50;
+  }
+  p {
+    padding: 0 40px 0 40px;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #7b7b7b;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: cetner;
+    text-align: center;
+    /* width: 165px;
+    height: 46px; */
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 165;
+      padding: 10px 0 0;
+      text-transform: uppercase;
+    }
+  }
+}
