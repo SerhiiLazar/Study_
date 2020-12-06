@@ -24,8 +24,31 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  &__ item-1 {
+  &__item-1 {
+    background-color: $wh;
     width: 568px;
     padding: 20px 10px 20px 10px;
+  }
+  &__item-2 {
+    background-color: $wh;
+    width: 568px;
+    padding: 20px 10px 20px 10px;
+  }
+  &__item-3 {
+    background-color: $wh;
+    width: 568px;
+    padding: 20px 10px 20px 10px;
+  }
+  &__item-4 {
+    background-color: $wh;
+    width: 568px;
+    padding: 20px 10px 20px 10px;
+  }
+
+  img {
+    float: left;
+  }
+  p {
+    width: 568px;
   }
 }
