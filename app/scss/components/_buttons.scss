@@ -17,27 +17,29 @@
     border-radius: 6px;
     transition: all 0.3s;
   }
-}
-.btn--yl {
-  padding: 4px 12px;
-  display: block;
-  border: 1px solid $wh;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 38px;
-  background-color: $yl;
-  transition: all 0.3s;
-  &:hover {
-    background: $wh;
-    color: $gray;
-    list-style-type: none;
-    border-radius: 2px;
+
+  &--yl {
+    // padding: 4px 12px;
+    // display: block;
+    border: 1px solid $wh;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 38px;
+    background-color: $yl;
     transition: all 0.3s;
+    &:hover {
+      background: $wh;
+      color: $gray;
+      list-style-type: none;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
   }
 }
+
 .btn--price {
   /*  display: block; */
   text-align: center;

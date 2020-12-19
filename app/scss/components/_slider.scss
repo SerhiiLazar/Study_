@@ -2,7 +2,38 @@
   width: 647px;
   margin: 22px auto;
   padding-bottom: 150px;
-  .viewport {
+  position: relative;
+  .btn_slider_1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    /* border: 2px solid #0f3a49; */
+    /* border-radius: 50%; */
+    top: calc(50% - 100px);
+    cursor: pointer;
+    background-color: #fffff;
+    text-transform: uppercase;
+  }
+  .btn_slider_2 {
+    position: absolute;
+    left: -44px;
+    top: 0;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    /* border: 2px solid #0f3a49; */
+    /* border-radius: 50%; */
+    top: calc(50% - 100px);
+    cursor: pointer;
+    background-color: #fffff;
+    text-transform: uppercase;
+  }
+}
+
+/* .viewport {
     width: 100%;
     display: table;
     position: relative;
@@ -83,3 +114,4 @@
     cursor: pointer;
   }
 }
+ */
