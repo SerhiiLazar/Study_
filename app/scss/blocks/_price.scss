@@ -3,24 +3,19 @@
   background-color: #e7edf3;
   height: 898px;
 
-  &__content {
-    .subtitle-top {
-      display: flex;
-
-      justify-content: center;
-
-      padding: 20px 0 20px;
-    }
-    h2 {
-      text-align: center;
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    .subtitle {
+      font-family: $font2;
       font-size: 30px;
-      line-height: 22px;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: -0.025em;
-      padding: 5px 0 20px;
     }
-    h2 > p {
+    p {
       font-size: 18px;
       font-weight: 300;
       text-transform: none;
@@ -29,7 +24,6 @@
       padding: 10px;
     }
   }
-
   &__box {
     display: flex;
     justify-content: center;
@@ -38,20 +32,21 @@
   &__box-item {
     display: flex;
     flex-direction: column;
-    width: 391px;
-    height: 441px;
-    align-items: center;
+    flex: 0 0 33%;
+
     border: 1px solid #ccd5df;
     background-color: #ffff;
-    padding: 10px 10px;
+
     text-align: center;
+    .box__btn {
+      align-items: center;
+    }
     a {
       text-decoration: none;
       font-size: 14px;
-      line-height: 1.2;
       font-weight: 400;
-      padding: 10px 0 0;
       text-transform: uppercase;
+      margin-bottom: 30px;
     }
     h3 {
       font-size: 25px;
@@ -77,7 +72,10 @@
       text-transform: uppercase;
       color: #818b95;
     }
-    ul > li {
+    ul {
+      padding: 0;
+    }
+    li {
       list-style-type: none;
       font-size: 13.5px;
       line-height: 40px;
@@ -90,20 +88,17 @@
   }
   &__box-item--blue {
     display: flex;
-    width: 395px;
+    flex: 0 0 34%;
     flex-direction: column;
-    height: 501px;
+    padding: 35px 0 35px;
     border: 1px solid #ccd5df;
     background-color: #709dca;
-    padding: 10px 10px;
+
     text-align: center;
-    align-items: center;
     a {
       font-size: 14px;
       text-decoration: none;
-      line-height: 1.2;
       font-weight: 400;
-      padding: 10px 0 0;
       text-transform: uppercase;
     }
     h3 {
@@ -131,8 +126,10 @@
       text-transform: uppercase;
       color: #c2e1ff;
     }
-
-    ul > li {
+    ul {
+      padding: 0;
+    }
+    li {
       list-style-type: none;
       font-size: 13.5px;
       line-height: 40px;
@@ -140,6 +137,7 @@
       text-transform: uppercase;
       color: #c2e1ff;
       margin-bottom: 20px;
+      padding: 0;
       border-top: 1px solid#8eb8e2;
     }
   }

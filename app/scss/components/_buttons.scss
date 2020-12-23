@@ -27,7 +27,7 @@
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 38px;
+    line-height: 42px;
     background-color: $yl;
     transition: all 0.3s;
     &:hover {
@@ -41,10 +41,6 @@
 }
 
 .btn--price {
-  /*  display: block; */
-  text-align: center;
-  padding: 4px 12px;
-  display: block;
   border: 1px solid $wh;
   text-decoration: none;
   font-weight: 500;
