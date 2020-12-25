@@ -1,0 +1,38 @@
+.bottom {
+  &__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #394b50;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+  .phone a {
+    display: flex;
+    justify-content: center;
+    font-size: 22.6px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #394b50;
+    text-decoration: none;
+    &::before {
+      content: "";
+      background-image: url("../images/dest/icon/ic_phone.png");
+      position: absolute;
+      background-repeat: no-repeat;
+      height: 15px;
+      top: -6px;
+      left: 4px;
+      width: 15px;
+    }
+    &:hover {
+      color: #007bff;
+    }
+  }
+}
