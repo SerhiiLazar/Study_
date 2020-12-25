@@ -8,6 +8,7 @@
     font-weight: 400;
     text-transform: uppercase;
     color: #394b50;
+    margin-bottom: 20px;
   }
   &__content {
     display: flex;
@@ -21,9 +22,10 @@
     font-weight: 400;
     color: #394b50;
     text-decoration: none;
+    margin-bottom: 20px;
     &::before {
-      content: "";
-      background-image: url("../images/dest/icon/ic_phone.png");
+      content: " ";
+      background-image: url("../app/images/dest/icon/ic_phone.png");
       position: absolute;
       background-repeat: no-repeat;
       height: 15px;
@@ -34,5 +36,30 @@
     &:hover {
       color: #007bff;
     }
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .bird {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .google {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .facebook {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .in {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
   }
 }
