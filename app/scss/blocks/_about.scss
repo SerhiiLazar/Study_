@@ -1,5 +1,9 @@
 .about {
   background-color: $yl;
+  @include mmax(991) {
+    width: 60rem;
+    margin-top: 5rem;
+  }
 
   &__content {
     background-color: $yl;

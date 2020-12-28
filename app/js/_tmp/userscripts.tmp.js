@@ -83,3 +83,17 @@ $(function () {
     slider.slick('slickPrev');
   });
 });
+/* function replace_phone_call($matches)
+{
+	$tel = str_replace(array('-', ' ', '(' , ')'), '', $matches[0]);
+	$tel = str_replace('+3', '8', $tel);
+	return '<a href="tel:' . $tel . '">' . $matches[0] . '</a>';
+}
+ 
+function replace_phone($text)
+{
+	return preg_replace_callback('/(?:\+|\d)[\d\-\(\) ]{9,}\d/', 'replace_phone_call', $text);
+}
+ 
+$text = 'Позвоните по телефону +38 (095) 806-36-71, или 0958063671';
+echo replace_phone($text); */

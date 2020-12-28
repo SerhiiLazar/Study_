@@ -102,10 +102,10 @@ $('.btn_slider_2').on('click',function(){
 
 });
 
-function replace_phone_call($matches)
+/* function replace_phone_call($matches)
 {
 	$tel = str_replace(array('-', ' ', '(' , ')'), '', $matches[0]);
-	$tel = str_replace('+3', '0', $tel);
+	$tel = str_replace('+3', '8', $tel);
 	return '<a href="tel:' . $tel . '">' . $matches[0] . '</a>';
 }
  
@@ -115,4 +115,4 @@ function replace_phone($text)
 }
  
 $text = 'Позвоните по телефону +38 (095) 806-36-71, или 0958063671';
-echo replace_phone($text);
+echo replace_phone($text); */

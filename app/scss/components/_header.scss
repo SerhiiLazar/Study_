@@ -8,6 +8,7 @@
   height: 94px;
   background-color: $wh;
 }
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,12 @@
   padding-bottom: 17px;
   &__menu {
     display: flex;
+  }
+  @include mmax(991) {
+    display: flex;
+    border: 2px solid #e98410;
+    padding: 17px;
+    text-align: center;
   }
   .nav {
     display: flex;

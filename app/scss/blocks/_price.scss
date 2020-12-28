@@ -2,6 +2,11 @@
   display: flex;
   background-color: #e7edf3;
   height: 898px;
+  @include mmax(991) {
+    width: 60rem;
+    margin-bottom: 50px;
+    height: auto;
+  }
 
   &__subtitle {
     display: flex;
@@ -31,6 +36,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mmax(575) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
   }
   &__box-item {
     display: flex;
@@ -41,6 +52,13 @@
     background-color: #ffff;
 
     text-align: center;
+    @include mmax(575) {
+      display: flex;
+      width: 40rem;
+      border-radius: 20%;
+      margin-bottom: 2rem;
+    }
+
     /* $__boxn {
       align-items: center;
       padding: 10px 10px 10px 10px;
@@ -105,6 +123,12 @@
     background-color: #709dca;
 
     text-align: center;
+    @include mmax(575) {
+      display: flex;
+      width: 40rem;
+      border-radius: 20%;
+      margin-bottom: 2rem;
+    }
     a {
       font-size: 14px;
       text-decoration: none;

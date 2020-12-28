@@ -2,12 +2,27 @@
   display: flex;
   padding-top: 150px;
   padding-bottom: 100px;
+
+  @include mmax(991) {
+    width: 60rem;
+    margin-bottom: 50px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
   &__subtitle-black {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     margin-bottom: 50px;
+    @include mmax(991) {
+      margin-bottom: 50px;
+      margin-top: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .subtitle {
       font-family: $font2;
       font-size: 35px;
@@ -32,6 +47,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     height: 100%;
+    @include mmax(991) {
+      margin-bottom: 7rem;
+    }
   }
   &__content-wrap {
     position: relative;
@@ -39,6 +57,10 @@
     flex: 0 0 45%;
     justify-content: space-between;
     padding-left: 15px;
+    @include mmax(991) {
+      margin: 0;
+      padding: 0;
+    }
   }
   .text {
     margin-left: 70px;

@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   padding: 10px 10px 10px;
+  @include mmax(991) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .form-control {
     position: relative;
     padding-left: 32px;
@@ -11,9 +16,13 @@
     border: none;
     transition: all 0.3s;
   }
+
   .form-name {
     position: relative;
     padding: 0px 10px;
+    @include mmax(991) {
+      margin-bottom: 10px;
+    }
     .btn-name {
       position: absolute;
       left: 14px;
@@ -36,6 +45,9 @@
   .form-email {
     position: relative;
     padding: 0px 10px;
+    @include mmax(991) {
+      margin-bottom: 10px;
+    }
     .btn-email {
       position: absolute;
       left: 14px;
@@ -58,6 +70,9 @@
   .form-phone {
     position: relative;
     padding: 0px 10px;
+    @include mmax(991) {
+      margin-bottom: 10px;
+    }
     .btn-phone {
       position: absolute;
       left: 14px;
